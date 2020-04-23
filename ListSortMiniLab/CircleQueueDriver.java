@@ -82,7 +82,8 @@ public class CircleQueueDriver {
 		Animal.key = Animal.KeyType.name;
 		Cupcakes.key = Cupcakes.KeyType.flavor;
 		Alphabet.key = Alphabet.KeyType.letter;
-		trial.cqueue.insertionSort();
+		trial.cqueue.selectionSort();
+		System.out.println("Sorted by selectionSort");
 		trial.showCQueue();
 		
 		//display queue objects
