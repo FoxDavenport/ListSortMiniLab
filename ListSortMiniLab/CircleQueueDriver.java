@@ -73,7 +73,8 @@ public class CircleQueueDriver {
 		//add different types of objects to the same opaque queue
 		trial.addCQueue(Animal.animalData());
 		trial.addCQueue(Cupcakes.cupCakeData());
-		trial.addCQueue(Alphabet.alphabetData());		
+		trial.addCQueue(Alphabet.alphabetData());	
+		trial.addCQueue(Anime.AnimeData());
 		//display queue objects in queue order
 		trial.showCQueue();
 		

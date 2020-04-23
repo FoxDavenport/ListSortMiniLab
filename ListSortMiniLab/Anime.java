@@ -3,7 +3,7 @@ public class Anime extends Generics
 	/*
 	 * fields 
 	 */
-	public static final String type = "Media Platform";
+	public static final String type = "Anime";
 	public enum KeyType {combo, name, rating, genre};
 	public static KeyType key = KeyType.combo;
 	private String name; 
