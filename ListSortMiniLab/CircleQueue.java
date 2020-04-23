@@ -207,69 +207,7 @@ public class CircleQueue
   }
   
   public void selectionSort() 
-  {	
-	/* INSERTION SORT 
-	//two nodes needed for insertion sort indexes
-	LinkedList node1 = headNode;
-	LinkedList node2 = (node1 == null) ? null : node1.getNext();
-	
-	//continue while nodes remain in bounds
-	while (node2 != null) 
-	{	
-		
-		//inner loop pointers for compares and shifts
-		LinkedList slot1 = node1;
-		LinkedList slot2 = node2;
-			
-		//key to be inserted into sorted slot
-		LinkedList key = new LinkedList(node2);		//note: make key a different object, persistent/static in value (node2 moves)
-		String keyText = node2.getObject().toString();
-	
-		//walks slots backwards until key position in found
-		while ( slot1.getObject().toString().compareTo(keyText) > 0 ) {
-	    	//shifts object greater than key value to the right in list
-			slot2.setObject(slot1.getObject());
-	
-			//moves inner loop pointers
-			slot1 = slot1.getPrevious();
-			slot2 = slot2.getPrevious();
-			
-			//stop at the front of list
-			if (slot1 == null)
-				break;
-			
-		}
-		//place key in insertion position
-		slot2.setObject(key.getObject());
-	
-		//advance insertion sort indexes
-		node1 = node1.getNext();
-		node2 = node2.getNext();
-	} */
-	  
-	/* ARRAY SELECTION SORT
-	// iterate list, one less than length
-        for (int i = 0; i < slist.length - 1; i++) {
-            
-            this.scompares++;
-            // Find the minimum element in unsorted array 
-            int min_idx = i; 
-            for (int j = i+1; j < slist.length; j++) {
-                if (slist[j] < slist[min_idx]) 
-                    min_idx = j; 
-                }
-                    
-                           
-  
-            // Swap the found minimum element with the first element
-            this.sswaps++;
-            int temp = slist[min_idx]; 
-            slist[min_idx] = slist[i]; 
-            slist[i] = temp; 
-        }
-        return slist;
-	 */
-	  
+  {	  
 	  for (LinkedList node1 = headNode; node1 != null; node1 = node1.getNext()) 
 	  {
 		    LinkedList min = node1;
