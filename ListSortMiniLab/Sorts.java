@@ -156,8 +156,13 @@ public class Sorts
 }
 
 
-    //best Selection Sort seems to be Insertion Sort as it has the lowest
-    //number of compares and swaps, so it should be the fastest sort
+     //best Selection Sort seems to be Selection Sort as it has the lowest
+    //number of swaps. A compare should be faster as only checks then moves on
+    //if you need to swap then have takes an extra step so longer time
+    //Although Insertion Sort has lowest compares, it's swaps vastly outway
+    //the number of comapres for the Selection Sort. Hence, Selection is the 
+    //best.
+    
     
      public static void main(String[] args)
     {
