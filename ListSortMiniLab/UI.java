@@ -65,7 +65,7 @@ public class UI extends JFrame
         result = new JTextArea();
         result.setEditable(false);
         result.setColumns(10);
-        result.setBounds(17, 77, 588, 328);
+        result.setBounds(10, 77, 595, 328);
         contentPane.add(result);
 		
 
