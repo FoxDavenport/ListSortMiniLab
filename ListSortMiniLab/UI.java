@@ -17,6 +17,8 @@ import javax.swing.JTextField;
 import java.awt.FlowLayout;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.Scrollbar;
+import javax.swing.JScrollPane;
 
 public class UI extends JFrame
 {
@@ -60,13 +62,11 @@ public class UI extends JFrame
         });
         btnTestShort.setBounds(240, 424, 145, 29);
         contentPane.add(btnTestShort);
-    
-        JTextArea result;
-        result = new JTextArea();
-        result.setEditable(false);
-        result.setColumns(10);
-        result.setBounds(10, 77, 595, 328);
-        contentPane.add(result);
+        
+        JTextArea textArea = new JTextArea();
+        textArea.setEditable(false);
+        textArea.setBounds(10, 27, 595, 386);
+        contentPane.add(textArea);
 		
 
 	}
