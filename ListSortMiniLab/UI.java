@@ -60,13 +60,14 @@ public class UI extends JFrame
                 CircleQueueDriver.main(null);
             }
         });
-        btnTestShort.setBounds(240, 424, 145, 29);
-        contentPane.add(btnTestShort);
         
         JTextArea textArea = new JTextArea();
+        JScrollPane scroll = new JScrollPane(textArea);
         textArea.setEditable(false);
-        textArea.setBounds(10, 27, 595, 386);
-        contentPane.add(textArea);
+        scroll.setBounds(10, 27, 595, 386);
+        contentPane.add(scroll);
+        btnTestShort.setBounds(240, 424, 145, 29);
+        contentPane.add(btnTestShort);
 		
 
 	}

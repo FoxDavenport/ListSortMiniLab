@@ -39,11 +39,14 @@ public class CircleQueueDriver
 	 */
 	public void showCQueue()
 	{
+	
+		/*
 		ConsoleMethods.println("Size: " + count);
 		ConsoleMethods.println("First Element: " + cqueue.getFirstObject());
 		ConsoleMethods.println("Last Element: " + cqueue.getLastObject());
 		ConsoleMethods.println("Full cqueue: " + cqueue);
 		ConsoleMethods.println();
+		*/
 	}
 	
 	/* 
