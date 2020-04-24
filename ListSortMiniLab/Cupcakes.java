@@ -20,36 +20,40 @@ public class Cupcakes extends Generics {
 	 * toString provides output based off of this.key setting
 	 */
 	@Override
-	public String toString() {		
+	public String toString() 
+	{		
 		String output="";
-		switch(key) {
-		case flavor:
-			output += this.flavor;
-			break;
-		case frosting:
-			output += this.frosting;
-			break;
-		case sprinkles:
-			output += this.sprinkles;
-			break;
-		case combo:
-		default:
-			output = type + ": " + this.flavor + ", " + this.frosting + ", " + this.sprinkles;
+		switch(key) 
+		{
+			case flavor:
+				output += this.flavor;
+				break;
+			case frosting:
+				output += this.frosting;
+				break;
+			case sprinkles:
+				output += this.sprinkles;
+				break;
+			case combo:
+			default:
+				output = type + ": " + this.flavor + ", " + this.frosting + ", " + this.sprinkles;
 		}
 		return output;
 	}
 	
-	public static Generics[] cupCakeData() {
-		Generics[] cc = { 
-				new Cupcakes("Red", 4, "Red Velvet"),
-			    new Cupcakes("Orange", 5, "Orange"),
-			    new Cupcakes("Yellow", 6, "Lemon"),
-			    new Cupcakes("Green", 7, "Apple"),
-			    new Cupcakes("Blue", 8, "Blueberry"),
-			    new Cupcakes("Purple", 9, "Blackberry"),
-			    new Cupcakes("Pink", 10, "Strawberry"),
-			    new Cupcakes("Tan", 11, "Vanilla"),
-			    new Cupcakes("Brown", 12, "Chocolate"),
+	public static Generics[] cupCakeData() 
+	{
+		Generics[] cc = 
+		{ 
+			new Cupcakes("Red", 4, "Red Velvet"),
+			new Cupcakes("Orange", 5, "Orange"),
+			new Cupcakes("Yellow", 6, "Lemon"),
+			new Cupcakes("Green", 7, "Apple"),
+			new Cupcakes("Blue", 8, "Blueberry"),
+			new Cupcakes("Purple", 9, "Blackberry"),
+			new Cupcakes("Pink", 10, "Strawberry"),
+			new Cupcakes("Tan", 11, "Vanilla"),
+			new Cupcakes("Brown", 12, "Chocolate"),
 		};
 		return cc;
 	}

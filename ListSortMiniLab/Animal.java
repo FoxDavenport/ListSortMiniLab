@@ -3,7 +3,8 @@
 /*
  * Animal class
  */
-public class Animal extends Generics {	
+public class Animal extends Generics 
+{	
 	/* fields
 	 * 
 	 */
@@ -32,20 +33,21 @@ public class Animal extends Generics {
 	public String toString()
 	{
 		String output="";
-		switch(key) {
-		case name:
-			output += this.name;
-			break;
-		case age:
-			output += "000" + this.age;
-			output = output.substring(output.length()-3);
-			break;
-		case color:
-			output += this.color;
-			break;
-		case combo:
-		default:
-			output += type + ": " + this.name  + ", " + this.color + ", " + this.age; 
+		switch(key) 
+		{
+			case name:
+				output += this.name;
+				break;
+			case age:
+				output += "000" + this.age;
+				output = output.substring(output.length()-3);
+				break;
+			case color:
+				output += this.color;
+				break;
+			case combo:
+			default:
+				output += type + ": " + this.name  + ", " + this.color + ", " + this.age; 
 		}
 		return output;
 		
@@ -54,14 +56,16 @@ public class Animal extends Generics {
 	/* Initialize Animal data
 	 * 
 	 */
-	public static Generics[] animalData() {
-		Generics[] ad = { 
-				new Animal("Lion", 8, "Gold"),
-				new Animal("Pig", 3, "Pink"),
-				new Animal("Robin", 7, "Red"),
-				new Animal("Cat", 10, "Black"),
-				new Animal("Kitty", 1, "Calico"),
-				new Animal("Dog", 14, "Brown")
+	public static Generics[] animalData() 
+	{
+		Generics[] ad = 
+		{ 
+			new Animal("Lion", 8, "Gold"),
+			new Animal("Pig", 3, "Pink"),
+			new Animal("Robin", 7, "Red"),
+			new Animal("Cat", 10, "Black"),
+			new Animal("Kitty", 1, "Calico"),
+			new Animal("Dog", 14, "Brown")
 		};
 		return ad;
 	}

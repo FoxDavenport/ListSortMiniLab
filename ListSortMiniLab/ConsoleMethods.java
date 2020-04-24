@@ -45,43 +45,51 @@ public class ConsoleMethods {
 	   System.out.println(obj);
    }
    
-   public static void printPrompt(String prompt) {
+   public static void printPrompt(String prompt) 
+   {
 	    print(prompt + " ");
 	    System.out.flush();
-	  }
+   }
    
-   public static String inputString(String prompt) {
+   public static String inputString(String prompt) 
+   {
 	    //inputFlush();
 	    printPrompt(prompt);
 	    return inString();
-	  }
+   }
 
-   private static String inString() {
+   private static String inString() 
+   {
 	   int aChar;
 	   String s = "";
 	   boolean finished = false;
 
 	   while (!finished) {
-		   try {
+		   try 
+		   {
 			   aChar = System.in.read();
 			   if (aChar < 0 || (char) aChar == '\n')
 				   finished = true;
 			   else if ((char) aChar != '\r')
 				   s = s + (char) aChar; // Enter into string
 		   	}
-			catch (java.io.IOException e) {
+			catch (java.io.IOException e) 
+		   {
 				System.out.println("Input error");
 				finished = true;
-				}
+		   }
 		}
 	    return s;
    }
    
-   public static int inputInt(String prompt) {
-     while (true) {
+   public static int inputInt(String prompt) 
+   {
+     while (true) 
+     {
        inputFlush();
        printPrompt(prompt);
-       try {
+       try 
+       {
          return Integer.valueOf(inString().trim()).intValue();
        }
 
@@ -91,16 +99,19 @@ public class ConsoleMethods {
      }
    }
    
-   public static char inputChar(String prompt) {
+   public static char inputChar(String prompt) 
+   {
 	   int aChar = 0;
 	   inputFlush();
 	   printPrompt(prompt);
-	   try {
+	   try 
+	   {
 		   aChar = System.in.read();
 	   }
-	   catch (java.io.IOException e) {
+	   catch (java.io.IOException e) 
+	   {
 		   println("Input error");
-		   }
+	   }
 	   inputFlush();
 	   return (char) aChar;
    }

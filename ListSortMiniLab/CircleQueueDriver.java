@@ -4,7 +4,8 @@
  * @author     John Mortensen
  *
  */
-public class CircleQueueDriver {
+public class CircleQueueDriver 
+{
 	
 	private CircleQueue cqueue;	// circle queue object
 	private int count; // number of objects in circle queue

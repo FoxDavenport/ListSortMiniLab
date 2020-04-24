@@ -1,5 +1,6 @@
  
-public class Alphabet extends Generics {
+public class Alphabet extends Generics 
+{
 	public static final String type = "Alphabet";
 	private static final int size = 26;
 	public enum KeyType {combo, letter};
@@ -21,15 +22,15 @@ public class Alphabet extends Generics {
 	@Override
 	public String toString()
 	{
-		
 		String output="";
-		switch(key) {
-		case letter:
-			output += this.letter;
-			break;
-		case combo:
-		default:
-			output += type + ": " + this.letter;
+		switch(key) 
+		{
+			case letter:
+				output += this.letter;
+				break;
+			case combo:
+			default:
+				output += type + ": " + this.letter;
 		}
 		return output;
 	}
@@ -41,9 +42,8 @@ public class Alphabet extends Generics {
 	{	
 		Generics[] alphabet = new Alphabet[Alphabet.size];
 		for (int i = 0; i < Alphabet.size; i++)
-		{
 			alphabet[i] = new Alphabet( (char)('A' + i) );
-		} 	
+		
 		return alphabet;
 	}
 	

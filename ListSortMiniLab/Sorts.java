@@ -33,7 +33,8 @@ public class Sorts
         this.SelectionSort();
     }
     
-    public String toString() {
+    public String toString() 
+    {
         int[] list;
         
         switch(listType) {
@@ -69,19 +70,23 @@ public class Sorts
         return output +" ]";    
     }
     
-    private int[] BubbleSort() { 
+    private int[] BubbleSort() 
+    { 
         
         // iterate list, one less than length
-        for (int i = 0; i < blist.length - 1; i++) {
+        for (int i = 0; i < blist.length - 1; i++) 
+        {
             
             // bubble sort key logic
-            for (int k = 1; k < blist.length - i; k++) {
+            for (int k = 1; k < blist.length - i; k++) 
+            {
                 
                 // analytics
                 this.bcompares++; // compare counter
                 
                 // bubble sort swap logic
-                if (blist[k-1] > blist[k]) {
+                if (blist[k-1] > blist[k]) 
+                {
                     int swap = blist[k];
                     blist[k] = blist[k-1];
                     blist[k-1] = swap;
@@ -97,15 +102,17 @@ public class Sorts
     }
 
     
-    private int[] InsertionSort() {
+    private int[] InsertionSort() 
+    {
 
         // iterate list, one less than length
-        for (int i = 0; i < ilist.length - 1; i++) {
-            
+        for (int i = 0; i < ilist.length - 1; i++) 
+        {
             // insertion sort key logic
             int k = i + 1;
             int swap = ilist[k];            
-            while( k > 0 && swap < ilist[k-1]) {
+            while( k > 0 && swap < ilist[k-1]) 
+            {
                 ilist[k] = ilist[k-1];
                 k--;
                 
@@ -122,17 +129,20 @@ public class Sorts
         return ilist;
     }
 
-    private int[] SelectionSort() {
+    private int[] SelectionSort() 
+    {
         // iterate list, one less than length
-        for (int i = 0; i < slist.length - 1; i++) {
+        for (int i = 0; i < slist.length - 1; i++) 
+        {
             
             this.scompares++;
             // Find the minimum element in unsorted array 
             int min_idx = i; 
-            for (int j = i+1; j < slist.length; j++) {
+            for (int j = i+1; j < slist.length; j++) 
+            {
                 if (slist[j] < slist[min_idx]) 
                     min_idx = j; 
-                }
+            }
                     
                            
   
