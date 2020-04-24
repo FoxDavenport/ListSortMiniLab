@@ -53,8 +53,8 @@ public class Alphabet extends Generics
 	public static void main(String[] args)
 	{
 		Generics[] ad = alphabetData();
-		for(Generics a : ad)
-			ConsoleMethods.print("" + a);
+		for(Generics alphabet : ad)
+			ConsoleMethods.println("" + alphabet);
 	}
 	
 }

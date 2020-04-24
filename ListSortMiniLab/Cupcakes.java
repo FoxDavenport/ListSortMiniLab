@@ -61,8 +61,8 @@ public class Cupcakes extends Generics {
 	public static void main(String[] args)
 	{
 		Generics[] cc = cupCakeData();
-		for(int i = 0; i < cc.length; i++)
-			System.out.println(cc[i]);
+		for(Generics cupcake : cc)
+			ConsoleMethods.println("" + cupcake);
 	}
 	
 }

@@ -70,8 +70,7 @@ public class Anime extends Generics
 	public static void main(String[] args)
 	{
 		Generics[] an = AnimeData();
-		for(int i = 0; i < an.length; i++)
-			System.out.println(an[i]);
+		for(Generics anime : an)
+			ConsoleMethods.println("" + anime);
 	}
-
 }

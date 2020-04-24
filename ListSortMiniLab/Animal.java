@@ -76,8 +76,8 @@ public class Animal extends Generics
 	public static void main(String[] args)
 	{
 		Generics[] ad = animalData();
-		for(Generics a : ad)
-			System.out.println(a);
+		for(Generics animal : ad)
+			ConsoleMethods.println("" + animal);
 	}
 
 }
