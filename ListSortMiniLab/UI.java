@@ -24,23 +24,6 @@ public class UI extends JFrame
 {
 	private JTextField textField;
 	private static final long serialVersionUID = 1L;
-
-	public static void main(String[] args) 
-	{
-		EventQueue.invokeLater(new Runnable() 
-		{
-			public void run() 
-			{
-				try 
-				{
-					UI frame = new UI();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
     private JPanel contentPane;
 	
 	public UI()
@@ -81,20 +64,6 @@ public class UI extends JFrame
         textArea.setEditable(false);
         scroll.setBounds(10, 27, 595, 386);
         contentPane.add(scroll);
-        
-        JButton InsertionSort_1 = new JButton("Sort");
-        InsertionSort_1.addActionListener(new ActionListener() {
-        	public void actionPerformed(ActionEvent e) 
-        	{
-        		InsertionSort.setVisible(true);
-        		InsertionSort.revalidate();
-                SelectionSort.setVisible(true);
-                SelectionSort.revalidate();
-        		//CircleQueueDriver.main(null);
-        	}
-        });
-        InsertionSort_1.setBounds(240, 424, 145, 29);
-        contentPane.add(InsertionSort_1);
 		
 
 	}
