@@ -53,15 +53,25 @@ public class UI extends JFrame
         setContentPane(contentPane);
         contentPane.setLayout(null);
         
-        JButton btnTestShort = new JButton("Sort");
-        btnTestShort.addActionListener(new ActionListener() {
+        JButton SelectionSort = new JButton("Selection Sort");
+        SelectionSort.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) 
             {
                 CircleQueueDriver.main(null);
             }
         });
-        btnTestShort.setBounds(240, 424, 145, 29);
-        contentPane.add(btnTestShort);
+        SelectionSort.setBounds(20, 424, 145, 29);
+        contentPane.add(SelectionSort);
+        
+        JButton InsertionSort = new JButton("Insertion Sort");
+        InsertionSort.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) 
+            {
+                CircleQueueDriver.main(null);
+            }
+        });
+        InsertionSort.setBounds(460, 424, 145, 29);
+        contentPane.add(InsertionSort);
         
         JTextArea textArea = new JTextArea();
         JScrollPane scroll = new JScrollPane(textArea);
