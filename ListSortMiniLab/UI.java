@@ -57,27 +57,44 @@ public class UI extends JFrame
         SelectionSort.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) 
             {
-                CircleQueueDriver.main(null);
+
             }
         });
         SelectionSort.setBounds(20, 424, 145, 29);
+        SelectionSort.setVisible(false);
         contentPane.add(SelectionSort);
+
         
         JButton InsertionSort = new JButton("Insertion Sort");
         InsertionSort.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) 
             {
-                CircleQueueDriver.main(null);
+
             }
         });
         InsertionSort.setBounds(460, 424, 145, 29);
+        InsertionSort.setVisible(false);
         contentPane.add(InsertionSort);
-        
+
         JTextArea textArea = new JTextArea();
         JScrollPane scroll = new JScrollPane(textArea);
         textArea.setEditable(false);
         scroll.setBounds(10, 27, 595, 386);
         contentPane.add(scroll);
+        
+        JButton InsertionSort_1 = new JButton("Sort");
+        InsertionSort_1.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) 
+        	{
+        		InsertionSort.setVisible(true);
+        		InsertionSort.revalidate();
+                SelectionSort.setVisible(true);
+                SelectionSort.revalidate();
+        		//CircleQueueDriver.main(null);
+        	}
+        });
+        InsertionSort_1.setBounds(240, 424, 145, 29);
+        contentPane.add(InsertionSort_1);
 		
 
 	}
