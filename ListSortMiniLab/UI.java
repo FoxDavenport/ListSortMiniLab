@@ -44,7 +44,7 @@ public class UI extends JFrame
 	public UI()
 	{
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setBounds(100, 100, 600, 500);
+        setBounds(100, 100, 631, 503);
         contentPane = new JPanel();
         contentPane.setBackground(new Color(255, 100, 0));
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -55,17 +55,17 @@ public class UI extends JFrame
         btnTestShort.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) 
             {
-                
+                CircleQueueDriver.main(null);
             }
         });
-        btnTestShort.setBounds(230, 443, 145, 29);
+        btnTestShort.setBounds(240, 424, 145, 29);
         contentPane.add(btnTestShort);
     
         JTextArea result;
         result = new JTextArea();
         result.setEditable(false);
         result.setColumns(10);
-        result.setBounds(6, 82, 588, 328);
+        result.setBounds(17, 77, 588, 328);
         contentPane.add(result);
 		
 
