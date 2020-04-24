@@ -1,4 +1,5 @@
- 
+import java.util.Scanner;
+
 /**
  * Circle Queue Driver takes a list of Objects and puts them into a Queue
  * @author     John Mortensen
@@ -86,8 +87,24 @@ public class CircleQueueDriver
 		Animal.key = Animal.KeyType.name;
 		Cupcakes.key = Cupcakes.KeyType.flavor;
 		Alphabet.key = Alphabet.KeyType.letter;
-		trial.cqueue.selectionSort();
-		System.out.println("Sorted by selectionSort");
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Sort by what?");
+		System.out.println("1. Insertion Sort");
+		System.out.println("2. Selection Sort");
+		int which = scanner.nextInt();
+		
+		switch(which)
+		{
+			case 1:
+				trial.cqueue.insertionSort();
+				System.out.println("Sorted by insertionSort");
+				break;
+			case 2:
+				trial.cqueue.selectionSort();
+				System.out.println("Sorted by selectionSort");
+				break;
+		}
 		trial.showCQueue();
 		
 		//display queue objects
