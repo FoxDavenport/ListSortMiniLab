@@ -156,7 +156,7 @@ public class Sorts
 }
 
 
-     //best Selection Sort seems to be Selection Sort as it has the lowest
+     //best Sort method seems to be Selection Sort as it has the lowest
     //number of swaps. A compare should be faster as only checks then moves on
     //if you need to swap then have takes an extra step so longer time
     //Although Insertion Sort has lowest compares, it's swaps vastly outway
