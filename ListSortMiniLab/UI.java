@@ -58,7 +58,6 @@ public class UI extends JFrame
             }
         });
         SelectionSort.setBounds(20, 424, 145, 29);
-        SelectionSort.setVisible(false);
         contentPane.add(SelectionSort);
 
         
@@ -70,8 +69,17 @@ public class UI extends JFrame
             }
         });
         InsertionSort.setBounds(460, 424, 145, 29);
-        InsertionSort.setVisible(false);
         contentPane.add(InsertionSort);
+        
+        JButton bubbleSort = new JButton("Bubble Sort");
+        bubbleSort.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) 
+            {
+
+            }
+        });
+        bubbleSort.setBounds(246, 424, 145, 29);
+        contentPane.add(bubbleSort);
 
         JTextArea textArea = new JTextArea();
         JScrollPane scroll = new JScrollPane(textArea);
