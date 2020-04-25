@@ -10,6 +10,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.border.EmptyBorder;
+
 import java.awt.GridLayout;
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -22,6 +23,19 @@ import javax.swing.JScrollPane;
 
 public class UI extends JFrame
 {
+	public static void main(String[] args) {
+        EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                try {
+                    UI frame = new UI();
+                    frame.setVisible(true);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+    }
+	
 	private JTextField textField;
 	private static final long serialVersionUID = 1L;
     private JPanel contentPane;
@@ -64,6 +78,8 @@ public class UI extends JFrame
         textArea.setEditable(false);
         scroll.setBounds(10, 27, 595, 386);
         contentPane.add(scroll);
+        //Sorts is = new Sorts();
+        //textArea.setText(is);
 		
 
 	}

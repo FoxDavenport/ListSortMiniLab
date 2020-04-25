@@ -32,7 +32,7 @@ public class Sorts
         slist= list.clone();
         this.SelectionSort();
     }
-    
+
     public String toString() 
     {
         int[] list;
