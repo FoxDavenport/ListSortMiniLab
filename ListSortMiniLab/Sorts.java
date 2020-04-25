@@ -160,7 +160,7 @@ public class Sorts
     //number of swaps. A compare should be faster as only checks then moves on
     //if you need to swap then have takes an extra step so longer time
     //Although Insertion Sort has lowest compares, it's swaps vastly outway
-    //the number of comapres for the Selection Sort. Hence, Selection is the 
+    //the number of swaps for the Selection Sort. Hence, Selection is the 
     //best.
     
     
