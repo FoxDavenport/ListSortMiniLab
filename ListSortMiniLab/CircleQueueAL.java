@@ -128,11 +128,4 @@ public class CircleQueueAL
 	    return queue;
 	}
 	
-	public void run()
-	{
-		CircleQueueAL trial = new CircleQueueAL();//trial to check
-		trial.add(new Anime("Toy Story", 8.8, "Horror"));
-		System.out.println(trial.toString());
-	}
-	
 }
