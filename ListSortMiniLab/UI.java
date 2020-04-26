@@ -112,7 +112,7 @@ public class UI extends JFrame
                 for (int i = 0; i < list.length; i++)
                     list[i] = (int)(Math.random() * size) + 1;
                 
-            	textArea.setText("Original:\n" + Arrays.toString(list));
+            	textArea.setText("Original:\n" + Arrays.toString(list) + "\n");
             }
         });
         
